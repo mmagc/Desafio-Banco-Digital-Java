@@ -1,4 +1,7 @@
 package desafioBanco;
 
-public class contaCorrente {
+public class contaCorrente extends Conta {
+
+
+
 }

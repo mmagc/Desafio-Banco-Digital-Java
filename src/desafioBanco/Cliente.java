@@ -1,6 +1,6 @@
 package desafioBanco;
 
-public class Banco {
+public class Cliente {
 
     public String nome;
 

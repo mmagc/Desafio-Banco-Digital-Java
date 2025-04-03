@@ -1,4 +1,7 @@
 package desafioBanco;
 
-public class contaPoupanca {
+public class contaPoupanca extends Conta {
+
+
+
 }
