@@ -2,10 +2,19 @@ package desafioBanco;
 
 public abstract class Conta implements IConta {
 
+    private static final int AGENCIA_PADRAO = 0001;
+    private static int SEQUENCIAL = 1;
 
-    private int agencia;
-    private int numero;
-    private double saldo;
+    protected int agencia;
+    protected int numero;
+    protected double saldo;
+
+    public Conta() {
+
+        this.agencia = Conta.AGENCIA_PADRAO;
+        this.numero = SEQUENCIAL++;
+
+    }
 
     public int getAgencia() {
         return agencia;
