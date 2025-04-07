@@ -1,37 +1,26 @@
 package desafioBanco;
 
+import lombok.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
+@NoArgsConstructor
 public class Banco {
 
-    public String nome;
-    private List<Conta> contas;
-
-
-    public Banco(){
-
-        this.contas = new ArrayList<>();
-
-    }
+    protected String nome;
+    protected List<Conta> contas = new ArrayList<>();
 
     public void adicionaConta(Conta conta){
         this.contas.add(conta);
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     @Override
     public String toString() {
-        return "Banco{" +
-                "nome='" + nome + '\'' +
-                ", contas=" + contas +
-                '}';
+        StringBuilder sb = new StringBuilder("Banco: " + nome + "\nContas:\n");
+        for (Conta conta : contas) {
+            sb.append(conta.toString()).append("\n");
+        }
+        return sb.toString();
     }
 }

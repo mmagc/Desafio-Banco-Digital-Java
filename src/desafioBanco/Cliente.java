@@ -1,5 +1,11 @@
 package desafioBanco;
 
+
+import lombok.*;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Cliente {
 
     public String nome;
