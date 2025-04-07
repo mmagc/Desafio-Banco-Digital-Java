@@ -42,6 +42,7 @@ public abstract class Conta implements IConta {
         System.out.printf("Agencia: %d%n", this.agencia);
         System.out.printf("Conta: %d%n", this.numero);
         System.out.printf("Saldo: %.2f%n", this.saldo);
+        System.out.printf("%n");
     }
 
     @Override

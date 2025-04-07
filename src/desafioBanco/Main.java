@@ -22,6 +22,8 @@ public class Main {
         cc.imprimirExtrato();
         poupanca.imprimirExtrato();
 
+        System.out.println(banco);
+
     }
 
 }
